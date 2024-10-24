@@ -9,6 +9,12 @@
     - npm i
     - npm run dev (Create the server by Nodemon)
 
+
+## Run tests
+- npm test
+
+// TODO Actualizar la estructura de las carpetas
+
 ### Project Structure
     ├── .vscode
     │   ├── launch.json         # To debug using Nodemon
@@ -20,10 +26,14 @@
     │   ├── app.js              # Express app configuration
     │   ├── models              # Data models
     │   ├── controllers         # Route controllers
+    │   ├── errors              # Error controllers
     │   ├── routes              # Application routes
     │   ├── utils
-    │       ├── helper.js       # Miscelanious functions
-    │       ├── middleware.js   # Generic middleware functions
+    │   │    ├── helper.js       # Miscelanious functions
+    │   │    ├── middleware.js   # Generic middleware functions
+    │   │
+    │   │
+    │
     │
     ├── .env                    # Environment variables
     ├── index.js                # Server creation and configuration
