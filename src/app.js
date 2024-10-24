@@ -3,7 +3,6 @@ import express from 'express'                        // Express for server and r
 import cors from 'cors'                              // CORS middleware to enable Cross-Origin requests
 import { writeLog } from './middleware/middleware.js'     // Custom logging middleware
 import potatoRoutes from './routes/potato.routes.js' // Importing potato-related routes
-import STATUS from './utils/requestStatus.js'        // Constants for HTTP status codes
 
 // Exporting the function that creates and configures the Express app
 export default _ => {
@@ -22,7 +21,7 @@ export default _ => {
         console.error(err.stack);  // Log the error stack trace to the console
 
         res
-            .status(err.statusCode)  // Respond with a 500 Internal Server Error status
+            .status(err.statusCode)
             .json({
                 error : err.name,
                 message : err.message,

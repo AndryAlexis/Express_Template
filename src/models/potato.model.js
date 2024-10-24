@@ -4,7 +4,7 @@ import ServerError from '../errors/server.error.js'
 const db = pool()
 
 const selectAllPotatoes = async _ => {
-    const [result] = await db.query(`SELECT * FROM clientes LIMIT 0`)
+    // const [result] = await db.query(`SELECT * FROM clientes LIMIT 1`)
 
     if (result.length === 0)
         throw new ServerError()
